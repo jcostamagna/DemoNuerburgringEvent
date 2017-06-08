@@ -1,0 +1,19 @@
+﻿  stdafx.cpp
+  Win32Project1.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Joystick.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  HTCViveVR.cpp
+  DataManager.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Generating Code...
+c:\users\admin\documents\visual studio 2017\projects\win32project1\win32project1\htcvivevr.cpp(224): warning C4715: 'LighthouseTracking::ParseTrackingFrame': not all control paths return a value
+DataManager.obj : error LNK2019: unresolved external symbol "public: bool __thiscall PostgreSQL::connect(void)" (?connect@PostgreSQL@@QAE_NXZ) referenced in function "public: void __thiscall DataManager::initializeData(void)" (?initializeData@DataManager@@QAEXXZ)
+Win32Project1.obj : error LNK2001: unresolved external symbol "public: bool __thiscall PostgreSQL::connect(void)" (?connect@PostgreSQL@@QAE_NXZ)
+DataManager.obj : error LNK2019: unresolved external symbol "public: bool __thiscall PostgreSQL::doQuery(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)" (?doQuery@PostgreSQL@@QAE_NAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "public: void __thiscall DataManager::saveData(int,struct DIJOYSTATE *,class std::vector<double,class std::allocator<double> > &)" (?saveData@DataManager@@QAEXHPAUDIJOYSTATE@@AAV?$vector@NV?$allocator@N@std@@@std@@@Z)
+DataManager.obj : error LNK2019: unresolved external symbol "public: bool __thiscall PostgreSQL::doQuery(char const *)" (?doQuery@PostgreSQL@@QAE_NPBD@Z) referenced in function "public: void __thiscall DataManager::initializeData(void)" (?initializeData@DataManager@@QAEXXZ)
+DataManager.obj : error LNK2019: unresolved external symbol "public: __thiscall PostgreSQL::~PostgreSQL(void)" (??1PostgreSQL@@QAE@XZ) referenced in function "public: void __thiscall DataManager::initializeData(void)" (?initializeData@DataManager@@QAEXXZ)
+Win32Project1.obj : error LNK2001: unresolved external symbol "public: __thiscall PostgreSQL::~PostgreSQL(void)" (??1PostgreSQL@@QAE@XZ)
+Win32Project1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall PostgreSQL::doQuerySelect(char const *)" (?doQuerySelect@PostgreSQL@@QAE_NPBD@Z) referenced in function "int __cdecl getLastId(void)" (?getLastId@@YAHXZ)
+Win32Project1.obj : error LNK2019: unresolved external symbol "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall PostgreSQL::getValue(int,int)" (?getValue@PostgreSQL@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HH@Z) referenced in function "int __cdecl getLastId(void)" (?getLastId@@YAHXZ)
+C:\Users\admin\Documents\Visual Studio 2017\Projects\Win32Project1\Debug\Win32Project1.exe : fatal error LNK1120: 6 unresolved externals
