@@ -36,8 +36,6 @@ std::wstring stringToWstring(const std::string& s)
 }
 
 
-
-
 int getNextId() {
 	PostgreSQL db;
 	if (!db.connect()) return 0;
@@ -142,12 +140,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    {
       return FALSE;
    }
-   
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
-
-   
 
    return TRUE;
 }
@@ -226,8 +221,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_CTLCOLORSTATIC:
 	{
 		HDC hdcStatic = (HDC)wParam;
-		//SetBkMode(hdcStatic, TRANSPARENT);
-		//SetTextColor(hdcStatic, RGB(0, 0, 0));
 		SetBkColor(hdcStatic, RGB(255, 255, 255));
 
 		if (hbrBkgnd == NULL)
