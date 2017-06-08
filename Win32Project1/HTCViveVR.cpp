@@ -177,48 +177,6 @@ std::vector<double> LighthouseTracking::ParseTrackingFrame() {
 			double vrData[6] = { position.v[0], position.v[1], position.v[2], quaternion.x, quaternion.y, quaternion.z };
 			std::vector<double> dataVr(vrData, vrData + sizeof(vrData) / sizeof(vrData[0]));
 			return dataVr;
-
-
-
-			//LineTo(GetDC(this->dummyHWND), quaternion.x, quaternion.y);
-
-			// and print some more info to the user about the state of the device/pose
-			/*switch (eTrackingResult) {
-			case vr::ETrackingResult::TrackingResult_Uninitialized:
-				sprintf_s(buf, sizeof(buf), "Invalid tracking result\n");
-				printf_s(buf);
-				break;
-			case vr::ETrackingResult::TrackingResult_Calibrating_InProgress:
-				sprintf_s(buf, sizeof(buf), "Calibrating in progress\n");
-				printf_s(buf);
-				break;
-			case vr::ETrackingResult::TrackingResult_Calibrating_OutOfRange:
-				sprintf_s(buf, sizeof(buf), "Calibrating Out of range\n");
-				printf_s(buf);
-				break;
-			case vr::ETrackingResult::TrackingResult_Running_OK:
-				sprintf_s(buf, sizeof(buf), "Running OK\n");
-				printf_s(buf);
-				break;
-			case vr::ETrackingResult::TrackingResult_Running_OutOfRange:
-				sprintf_s(buf, sizeof(buf), "WARNING: Running Out of Range\n");
-				printf_s(buf);
-
-				break;
-			default:
-				sprintf_s(buf, sizeof(buf), "Default\n");
-				printf_s(buf);
-				break;
-			}
-
-			// print if the pose is valid or not
-			if (bPoseValid)
-				sprintf_s(buf, sizeof(buf), "Valid pose\n");
-			else
-				sprintf_s(buf, sizeof(buf), "Invalid pose\n");
-			printf_s(buf);
-
-			break;*/
 		}
 		}
 	}

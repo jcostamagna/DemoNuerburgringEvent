@@ -2,17 +2,22 @@
 
 #include <stdio.h>
 #include <list>
+#include <atomic>
 
 class Device
 {
 public:
 
-	//Device();
+	std::atomic<bool> timeToQuit{ false };
 
 	virtual std::list<int> getData() = 0;
 
 	virtual ~Device()
 	{
+	}
+
+	void stop() {
+		//this->timeToQuit = true;
 	}
 };
 

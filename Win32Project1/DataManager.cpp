@@ -15,7 +15,6 @@ void DataManager::startCollecting(int id)
 	joy.start();
 	while (!this->timeToQuit.load()) {
 
-		//std::cout << "SESION:" << this->idSession.load() << std::endl;
 		saveData(id, joy.getJoy(), vr.ParseTrackingFrame());
 		//Sleep(5);
 #ifdef _DEBUG
@@ -23,7 +22,6 @@ void DataManager::startCollecting(int id)
 #endif
 	}
 	joy.close();
-	//std::cout << "TERMINE" << std::endl;
 }
 
 void DataManager::initializeData()
